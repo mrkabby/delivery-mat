@@ -22,26 +22,31 @@ const HeroSection = () => {
   }
 
   return (
-    <section
-      id="hero"
-      className="relative h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${content.image})` }}
-    >
-      <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-        <div className="text-center text-white px-6">
-          <h1 className="text-4xl md:text-6xl font-bold mb-4">{content.title}</h1>
-          <p className="text-lg md:text-xl mb-6">{content.description}</p>
-          <Link
-            to="features"
-            smooth={true}
-            duration={500}
-            className="bg-green-700 px-6 py-3 text-lg rounded-lg font-bold hover:bg-green-800 transition cursor-pointer"
-          >
-            Learn More
-          </Link>
-        </div>
+    <section id="hero" className="relative h-screen flex items-center justify-center bg-white bg-opacity-50 ">
+    <div className="absolute inset-0">
+      <img
+        src={content.image}
+        alt="Hero"
+        className="w-full h-full object-contain"
+      />
+    </div>
+    <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+      <div className="text-center text-white px-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">{content.title}</h1>
+        <p className="text-lg md:text-xl mb-6">{content.description}</p>
+        <Link
+          to="features"
+          smooth={true}
+          duration={500}
+          className="bg-green-700 px-6 py-3 text-lg rounded-lg font-bold hover:bg-green-800 transition cursor-pointer"
+        >
+          Learn More
+        </Link>
       </div>
-    </section>
+    </div>
+  </section>
+  
+
   );
 };
 

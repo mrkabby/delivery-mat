@@ -19,8 +19,8 @@ const About = () => {
   return (
     <section id="about" className="py-16 bg-gray-100">
       <div className="container mx-auto px-6 flex flex-col md:flex-row md:gap-8 lg:gap-16 items-center">
-        <div className="w-full md:w-1/2 mb-6 md:mb-0">
-          <img src={content.image} alt="Francisca Tahiru " className="rounded-lg shadow-lg w-full" />
+        <div className="w-full md:w-1/2 mb-6 md:mb-0 ">
+          <img src={content.image} alt="Francisca Tahiru " className="rounded-lg shadow-lg w-full " />
         </div>
         <div className="w-full md:w-1/2 text-center md:text-left">
           <h2 className="text-3xl font-bold mb-6">Francisca Tahiru

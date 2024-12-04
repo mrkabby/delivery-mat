@@ -5,7 +5,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-white shadow-lg z-50">
+    <header className="fixed w-full bg-white shadow-lg z-50 ">
       <div className="container mx-auto flex justify-between items-center py-4 px-6">
         {/* Logo */}
         <h1 className="text-2xl font-bold text-green-700">UNIMAT</h1>
