@@ -58,7 +58,7 @@ const Footer = () => {
   const FooterTitle = ({ children }) => (
     <h4
         // Static partial underline width set to w-1/2
-        className={`text-xl font-semibold mb-6 ${darkTextColor} relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-1/2 after:h-0.5 after:bg-orange-500`}
+        className={`text-xl font-semibold mb-6 ${darkTextColor} relative after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-1/6 after:h-0.5 after:bg-orange-500`}
     >
         {children}
     </h4>
@@ -104,7 +104,6 @@ const Footer = () => {
                         <PageLink>Home</PageLink>
                         <PageLink>About</PageLink>
                         <PageLink>Shop</PageLink>
-                        <PageLink>News</PageLink>
                         <PageLink>Contact</PageLink>
                     </ul>
                 </div>
@@ -141,10 +140,6 @@ const Footer = () => {
                     <p className={bodyTextColor}>
                         &copy; {new Date().getFullYear()} Delivery Mat. All Rights Reserved.
                         <br />
-                        Distributed By -
-                        <FooterLink href="#" className="ml-1">
-                            Themewagon
-                        </FooterLink>
                     </p>
                 </div>
 
