@@ -5,17 +5,19 @@ import HeroSection from './components/HeroSection'
 import Contact from './components/ContactSection'
 import About from './components/AboutSection'
 import Features from './components/FeaturesSection'
+import ShopSection from './components/ShopSection'
 
 const App = () => {
   return (
     <>
     <Navbar />
     <HeroSection />
-    <About />
+    <About />\
     <Features />
+    <ShopSection />
     <Contact />
     <Footer />
-    
+
     </>
   )
 }
