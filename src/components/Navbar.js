@@ -63,8 +63,8 @@ const Navbar = () => {
             <NavLink to="home" setIsMenuOpen={setIsMenuOpen}>Home</NavLink>
             <NavLink to="about" setIsMenuOpen={setIsMenuOpen}>About</NavLink>
             <NavLink to="features" setIsMenuOpen={setIsMenuOpen}>Features</NavLink>
-            <NavLink to="contact" setIsMenuOpen={setIsMenuOpen}>Contact</NavLink>
             <NavLink to="shop" setIsMenuOpen={setIsMenuOpen}>Shop</NavLink>
+            <NavLink to="contact" setIsMenuOpen={setIsMenuOpen}>Contact</NavLink>
         </nav>
 
         {/* Utility Icons (Desktop) */}
@@ -94,7 +94,7 @@ const Navbar = () => {
             <NavLink to="about" setIsMenuOpen={setIsMenuOpen}>About</NavLink>
             <NavLink to="pages" setIsMenuOpen={setIsMenuOpen}>Features</NavLink>
             <NavLink to="contact" setIsMenuOpen={setIsMenuOpen}>Contact</NavLink>
-
+            <NavLink to="shop" setIsMenuOpen={setIsMenuOpen}>Shop</NavLink>
             {/* Mobile Utility Icons */}
             <div className="flex justify-center space-x-8 pt-4 text-xl text-white">
                 <Search className="hover:text-orange-500 transition cursor-pointer" />

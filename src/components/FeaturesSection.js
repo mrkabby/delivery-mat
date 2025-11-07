@@ -3,17 +3,6 @@ import { Droplets, ShieldCheck, Leaf, Car, DollarSign, Hospital, ArrowRight } fr
 
 const Features = () => {
 
-
-  // Mapping Lucide icons to your feature content
-  const featureIcons = [
-    Droplets,      // For Hygienic and Comfortable
-    ShieldCheck,   // For Waterproof and Durable
-    Leaf,          // For Eco-Friendly Materials
-    Car,           // For Easy to Transport
-    DollarSign,    // For Affordable Pricing
-    Hospital,      // For Trusted by Hospitals
-  ];
-
   // Placeholder data that will now be used directly
   const defaultFeatures = [
     { title: "Hygienic and Comfortable", description: "Designed with comfort and safety in mind for mothers and newborns.", icon: Droplets },

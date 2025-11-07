@@ -1,15 +1,9 @@
 import React from 'react';
-import useGoogleSheetData from '../components/UseHooks'; // Assuming this hook is correctly set up
 import { Link } from 'react-scroll';
 // FIX: Importing the local image directly
 import heroBg from '../images/Hero3.png'; // Ensure this path is correct for your project structure
 
 const HeroSection = () => {
-  const tabName = 'HeroSection';
-  const range = 'A2:C2';
-  const [data, error] = useGoogleSheetData(tabName, range);
-
-  // FIX: Removed linkedImageUrl and directly using the imported local image
   const backgroundImage = heroBg; // Now using the imported local image
 
   const defaultContent = {
@@ -20,10 +14,6 @@ const HeroSection = () => {
   };
 
   const content = defaultContent;
-
-  if (error) {
-    console.error('Error fetching Hero Section data:', error);
-  }
 
   return (
     <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden pt-20">
