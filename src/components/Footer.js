@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="px-4 sm:px-6 lg:px-8">
 
             {/* --- Main Footer Sections --- */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-600 pb-12">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-10 border-b border-gray-600 pb-12">
 
                 {/* 1. About Us */}
                 <div>
@@ -107,30 +107,6 @@ const Footer = () => {
                         <PageLink>Contact</PageLink>
                         <PageLink>Shop</PageLink>
                     </ul>
-                </div>
-
-                {/* 4. Subscribe */}
-                <div>
-                    <FooterTitle>Subscribe</FooterTitle>
-                    <p className={`text-sm ${bodyTextColor} mb-4`}>
-                        Subscribe to our mailing list to get the latest updates.
-                    </p>
-                    {/* Email Form */}
-                    <form className="flex shadow-md rounded-md overflow-hidden">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="w-full p-3 text-gray-800 placeholder-gray-400 focus:outline-none bg-white"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-orange-500 hover:bg-orange-600 transition duration-300 p-3 text-white"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform rotate-45" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.5V9a1 1 0 012 0v6.5l5 1.429a1 1 0 001.169-1.409l-7-14z" />
-                            </svg>
-                        </button>
-                    </form>
                 </div>
             </div>
 

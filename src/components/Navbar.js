@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { ShoppingCart, Search, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 // Assuming the UNIMAT logo is saved locally at this path
 import UnimatLogo from '../images/Logo3.png'; // NOTE: Update this path if necessary
 
@@ -59,7 +59,7 @@ const Navbar = () => {
         </div>
 
         {/* Navigation Links (Desktop) */}
-        <nav className="hidden md:flex items-center space-x-8">
+        <nav className="hidden md:flex items-center  space-x-10">
             <NavLink to="home" setIsMenuOpen={setIsMenuOpen}>Home</NavLink>
             <NavLink to="about" setIsMenuOpen={setIsMenuOpen}>About</NavLink>
             <NavLink to="features" setIsMenuOpen={setIsMenuOpen}>Features</NavLink>
@@ -67,11 +67,6 @@ const Navbar = () => {
             <NavLink to="contact" setIsMenuOpen={setIsMenuOpen}>Contact</NavLink>
         </nav>
 
-        {/* Utility Icons (Desktop) */}
-        <div className="hidden md:flex items-center space-x-4 text-xl text-white">
-            <Search className="hover:text-orange-500 transition cursor-pointer" />
-            <ShoppingCart className="hover:text-orange-500 transition cursor-pointer" />
-        </div>
 
         {/* Hamburger Menu for Mobile */}
         <button
@@ -95,11 +90,6 @@ const Navbar = () => {
             <NavLink to="pages" setIsMenuOpen={setIsMenuOpen}>Features</NavLink>
             <NavLink to="contact" setIsMenuOpen={setIsMenuOpen}>Contact</NavLink>
             <NavLink to="shop" setIsMenuOpen={setIsMenuOpen}>Shop</NavLink>
-            {/* Mobile Utility Icons */}
-            <div className="flex justify-center space-x-8 pt-4 text-xl text-white">
-                <Search className="hover:text-orange-500 transition cursor-pointer" />
-                <ShoppingCart className="hover:text-orange-500 transition cursor-pointer" />
-            </div>
         </div>
       </div>
     </header>
