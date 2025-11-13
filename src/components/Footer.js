@@ -77,13 +77,13 @@ const Footer = () => {
         <div className="px-4 sm:px-6 lg:px-8">
 
             {/* --- Main Footer Sections --- */}
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 border-b border-gray-600 pb-12">
+            <div className="grid grid-cols-3 md:grid-cols-3 gap-10 border-b border-gray-600 pb-12">
 
                 {/* 1. About Us */}
                 <div>
                     <FooterTitle>About us</FooterTitle>
                     <p className={`text-sm ${bodyTextColor} leading-relaxed pr-8`}>
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                       UNIMAT was founded by Midwife Tahiru Francisca with the mission to produce cost-effective, environmentally friendly delivery mats using plantain stem fibers. Our innovation provides safe, hygienic, and affordable delivery solutions for mothers, helping mitigate childbirth poverty in Ghana.
                     </p>
                 </div>
 
@@ -91,9 +91,9 @@ const Footer = () => {
                 <div>
                     <FooterTitle>Get in Touch</FooterTitle>
                     <ul className="text-sm space-y-3">
-                        <li className={bodyTextColor}>34/8, East Hukupara, Gifirtok, Sudan.</li>
-                        <li><FooterLink href="mailto:support@fruitkha.com">support@fruitkha.com</FooterLink></li>
-                        <li className={bodyTextColor}>+00 111 222 3333</li>
+                        <li className={bodyTextColor}>Bechem-Ahafo region,Ghana</li>
+                        <li><FooterLink href="info@feepfibertech.com">info@feepfibertech.com</FooterLink></li>
+                        <li className={bodyTextColor}>(+233) 547225892</li>
                     </ul>
                 </div>
 
@@ -103,33 +103,10 @@ const Footer = () => {
                     <ul className="text-sm space-y-3">
                         <PageLink>Home</PageLink>
                         <PageLink>About</PageLink>
-                        <PageLink>Shop</PageLink>
+                        <PageLink>Features</PageLink>
                         <PageLink>Contact</PageLink>
+                        <PageLink>Shop</PageLink>
                     </ul>
-                </div>
-
-                {/* 4. Subscribe */}
-                <div>
-                    <FooterTitle>Subscribe</FooterTitle>
-                    <p className={`text-sm ${bodyTextColor} mb-4`}>
-                        Subscribe to our mailing list to get the latest updates.
-                    </p>
-                    {/* Email Form */}
-                    <form className="flex shadow-md rounded-md overflow-hidden">
-                        <input
-                            type="email"
-                            placeholder="Email"
-                            className="w-full p-3 text-gray-800 placeholder-gray-400 focus:outline-none bg-white"
-                        />
-                        <button
-                            type="submit"
-                            className="bg-orange-500 hover:bg-orange-600 transition duration-300 p-3 text-white"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transform rotate-45" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.5V9a1 1 0 012 0v6.5l5 1.429a1 1 0 001.169-1.409l-7-14z" />
-                            </svg>
-                        </button>
-                    </form>
                 </div>
             </div>
 
@@ -138,7 +115,7 @@ const Footer = () => {
                 {/* Copyright Info */}
                 <div className="mb-6 md:mb-0 text-center md:text-left">
                     <p className={bodyTextColor}>
-                        &copy; {new Date().getFullYear()} Delivery Mat. All Rights Reserved.
+                        &copy; {new Date().getFullYear()} UNIMAT. All Rights Reserved.
                         <br />
                     </p>
                 </div>
